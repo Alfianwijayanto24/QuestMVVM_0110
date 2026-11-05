@@ -16,5 +16,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-
+            Pertemuan8Theme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    SiswaApp(
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
+            }
+        }
+    }
 }
